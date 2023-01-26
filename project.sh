@@ -8,6 +8,7 @@ function menu () {
 		echo "B) Delete a user account"
 		echo "C) Change inital group for a user account"
 		echo "D) Change account expiration date for a user account"
+		echo "E) Create a group"
 		echo "Q) Quit"
 		echo ""
 		echo -n "Enter the letter for the option you want to pick: "
@@ -53,7 +54,7 @@ function createUser() {
 	echo ""
 	echo -n "Please enter the users work group: "
 	read group
-# you must create the group first manually .
+# you must create the group first.
 	useradd -c "$role" -g $group  $username
 
 
